@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html,body{
+    background-color: #eeeeee;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+*{
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navigation{
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    z-index: 8;
+    border-bottom: 1px solid hsla(0,0%,0%,0.15);
+}
+.nav{
+    position: relative;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+}
+input[type="text"]{
+    background-color: #FFFFFF;
+    position: relative;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid hsla(0,0%,0%,0.15);
+}
+.results{
+    background-color: #FFFFFF;
+    position: relative;
+    display: none;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid hsla(0,0%,0%,0.15);
+}
+.results ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.results ul a{
+    text-decoration: none;
+}
+.results ul a li{
+    display: block;
+    padding: 10px;
+    margin: 0;
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid hsla(0,0%,0%,0.15);
+}
+.results ul a li:hover{
+    background-color: #dddddd;
+}
