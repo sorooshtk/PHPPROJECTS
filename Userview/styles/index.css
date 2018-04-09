@@ -1,0 +1,384 @@
+@import url("roots.css");
+html,body{
+    background-image: url("../images/covers/Mexico.jpg");
+    background-size: var(--bg-size);
+    background-repeat:var(--bg-repeat);
+    background-position:var(--bg-position);
+    background-attachment: var(--bg-attachment);
+    background-color: var(--bg-color);
+    width:var(--max-width);
+    height: var(--max-height);
+    margin:var(--no-margin);
+    padding:var(--no-padding);
+    overflow: var(--no-overflow);
+}
+@media only screen and(-webkit-min-device-pixel-ratio: 2),only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 2),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (min-device-pixel-ratio: 1.5),only screen and (min-device-pixel-ratio: 2){
+    html,body{
+        background-image: url("../images/covers/Mexico@x2.jpg");
+    }
+}
+*{
+    outline: var(--outline);
+    -webkit-box-sizing: var(--box-sizing);
+    -moz-box-sizing: var(--box-sizing);
+    -o-box-sizing: var(--box-sizing);
+    -ms-box-sizing: var(--box-sizing);
+    box-sizing: var(--box-sizing);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -o-transition: var(--transition);
+    -ms-transition: var(--transition);
+    transition: var(--transition);
+}
+a{
+  text-decoration: var(--text-decoration);
+}
+@keyframes bodyContentsLoad{
+    from{
+        opacity: var(--opacity01);
+        padding: var(--padding02);
+    }
+    to{
+        opacity: var(--opacity02);
+        padding: var(--padding01);
+    }
+}
+.body-cotent-layer{
+    background-color: var(--color-white08);
+    opacity: var(--opacity02);
+    position:var(--pos-relative);
+    width:var(--max-width);
+    height:var(--max-height);
+    padding:var(--padding01);
+    margin:var(--no-margin);
+    overflow:var(--auto-oveflow);
+    overflow-x:var(--no-x-axis);
+    -webkit-animation: bodyContentsLoad 1s 1;
+    -webkit-animation-timing-function: var(--animation-timing01);
+    animation: bodyContentsLoad 1s 1;
+    animation-timing-function: var(--animation-timing01);
+}
+.login-form-container{
+    background-color:var(--transparent);
+    position:var(--pos-absolute);
+    width:var(--width01);
+    height:var(--height01);
+    left:var(--left01);
+    right:var(--right01);
+    margin:var(--margin01);
+    padding:var(--padding03);
+    border: var(--border01);
+    overflow:var(--no-overflow);
+}
+.login-form-container form{
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--max-height);
+    overflow: var(--no-overflow);
+}
+.login-form-container form div{
+    display: var(--display1);
+    position: var(--pos-relative);
+    padding: var(--no-padding);
+    margin: var(--no-margin);
+    width: var(--max-width);
+    overflow: var(--no-overflow);
+}
+.logUname{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height02);
+    padding: var(--padding04);
+    font-family: var(--font-family01);
+    font-size: var(--font-size01);
+    color: var(--color-lighter01-black);
+    letter-spacing: var(--letter-spacing01);
+    border: var(--border02);
+}
+.unameStatus{
+    background-color: var(--transparent);
+    position: var(--pos-absolute);
+    width: var(--width02);
+    height: var(--max-height);
+    top: var(--top01);
+    right: var(--right01);
+}
+.unameStatus svg{
+    position: var(--pos-absolute);
+    width: var(--width03);
+    height: var(--height04);
+    top: var(--top01);
+    left: var(--left01);
+    right: var(--right01);
+    bottom: var(--bottom01);
+    margin: var(--margin01);
+}
+#logPass{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height02);
+    padding: var(--padding04);
+    font-family: var(--font-family01);
+    font-size: var(--font-size01);
+    color: var(--color-lighter01-black);
+    letter-spacing: var(--letter-spacing01);
+    border: var(--border02);
+}
+.passView{
+    background-color: var(--transparent);
+    position: var(--pos-absolute);
+    width: var(--width02);
+    height: var(--max-height);
+    top: var(--top01);
+    right: var(--right01);
+    cursor: var(--cursor1);
+}
+.passView svg{
+    position: var(--pos-absolute);
+    width: var(--width03);
+    height: var(--height04);
+    top: var(--top01);
+    left: var(--left01);
+    right: var(--right01);
+    bottom: var(--bottom01);
+    margin: var(--margin01);
+}
+.passView svg g path{
+    fill:var(--color-black);
+}
+.btnLogin{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height02);
+    padding: var(--no-padding);
+    font-family: var(--font-family01);
+    font-size: var(--font-size02);
+    font-weight: var(--font-weight02);
+    color: var(--color-lighter01-black);
+    letter-spacing: var(--letter-spacing01);
+    cursor: var(--cursor1);
+    border: var(--border02);
+}
+.btnLogin:hover{
+    background-color: var(--color-f3f3);
+}
+.logErrs{
+    font-family: var(--font-family01);
+    font-size: var(--font-size01);
+    color: var(--color-cold01-red);
+    letter-spacing: var(--letter-spacing01);
+}
+.footer{
+    background-color: var(--color-black09);
+    position: var(--pos-fixed);
+    width: var(--max-width);
+    padding: var(--padding03);
+    left: var(--left01);
+    bottom: var(--bottom01);
+    font-family: var(--font-family01);
+    font-size: var(--font-size03);
+    color: var(--color-f3f3);
+    letter-spacing: var(--letter-spacing01);
+    text-align: var(--text-align-center);
+}
+b > a{
+    color: var(--color-f3f3);
+}
+b > a:hover{
+    text-decoration: var(--text-decoration-u);
+}
+/*Userview Page Styles*/
+.top-navigation{
+    background-color: var(--color-white);
+    position: var(--pos-absolute);
+    width: var(--max-width);
+    z-index: var(--z-index08);
+    border-bottom: var(--border-bottom1);
+}
+.navigation-container{
+    background-color: var(--transparent);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    padding: var(--padding03);
+}
+.username-title-container{
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height02);
+}
+.username-title-container p{
+    position: var(--pos-relative);
+    width: var(--max-width);
+    padding: var(--padding05);
+    margin: var(--no-margin);
+    font-family: var(--font-family01);
+    font-size: var(--font-size01);
+    color: var(--color-lighter01-black);
+    letter-spacing: var(--letter-spacing01);
+    text-align: var(--text-align-center);
+    vertical-align: var(--vertical-align-middle);
+    line-height: var(--line-height01);
+}
+.logout-button-container{
+    background-color: var(--color-white);
+    position: var(--pos-absolute);
+    width: var(--width04);
+    height: var(--height02);
+    right: var(--right02);
+    top: var(--top02);
+    cursor: var(--cursor1);
+    border-radius: var(--radius1);
+}
+.logout-button-container form{
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--max-height);
+}
+.logout-button-container form button{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--max-height);
+    cursor: var(--cursor1);
+    border: var(--border0);
+    border-radius: var(--radius1);
+}
+.logout-button-container form button svg{
+    position: var(--pos-absolute);
+    width: var(--width02);
+    height: var(--height03);
+    top: var(--top01);
+    left: var(--left01);
+    right: var(--right01);
+    bottom: var(--bottom01);
+    margin: var(--margin01);
+}
+.body-frame{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--max-height);
+    padding: var(--padding06);
+    overflow: var(--no-overflow);
+}
+.body-frame-cotents{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--max-height);
+    padding: var(--padding07);
+    margin: var(--no-margin);
+    overflow: var(--auto-overflow);
+    overflow-x: var(--no-x-axis);
+}
+.post-container{
+    background-color: var(--color-white);
+    width: var(--max-width);
+    max-width: var(--width05);
+    min-width: var(--width06);
+    height: var(--height01);
+    min-height: var(--height06);
+    margin: var(--margin01);
+    border: var(--border01);
+}
+.post-description{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height01);
+    padding: var(--padding03);
+}
+.post-details{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+}
+.user-profile{
+    background-color: var(--color-white);
+    position: relative;
+    width: var(--width07);
+    height: var(--height07);
+    z-index: var(--z-index08);
+    border-radius: var(--radius1);
+}
+.user-profile img{
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--max-height);
+    border-radius: var(--radius1);
+}
+.user-name-container{
+    background-color: var(--color-white);
+    position: var(--pos-absolute);
+    width: var(--max-width);
+    height: var(--max-height);
+    padding: 6px 6px 6px 61px;
+    top: var(--top01);
+    left: var(--left01);
+}
+.user-name-cage{
+    background-color: var(--color-white);
+    display: var(--display1);
+    position: var(--pos-relative);
+    width: var(--max-width);
+}
+.user-name-cage span{
+    margin: var(--no-margin);
+    padding: var(--no-padding);
+    font-family: var(--font-family01);
+    font-size: var(--font-size01);
+    color: var(--color-lighter01-black);
+    letter-spacing: var(--letter-spacing01);
+}
+.time-lock-container{
+    background-color: var(--color-white);
+    display: var(--display1);
+    position: var(--pos-relative);
+    width: var(--max-width);
+}
+.time-lock-container span{
+    display: var(--display3);
+    font-family: var(--font-family01);
+    font-size: var(--font-size03);
+    color: var(--color-lighter01-black);
+}
+.privacy{
+    padding: var(--no-padding);
+    margin: var(--no-margin);
+    font-family: var(--font-family01);
+    font-size: var(--font-size04);
+    color: var(--color-lighter01-black);
+    border: var(--border01);
+    border-radius: var(--radius1);
+}
+.post-desc-contents{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    padding: var(--padding09);
+    margin: var(--no-margin);
+}
+.post-desc-contents p{
+    margin: var(--no-margin);
+    padding: var(--no-padding);
+    font-family: var(--font-family01);
+    font-size: var(--font-size01);
+    color: var(--color-black);
+    letter-spacing: var(--letter-spacing01);
+}
+.post-image-container{
+    background-color: var(--color-white);
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height01);
+    padding: var(--padding03);
+}
+.post-image-container img{
+    position: var(--pos-relative);
+    width: var(--max-width);
+    height: var(--height01);
+    object-fit: cover;
+}
