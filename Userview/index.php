@@ -9,6 +9,7 @@ if(isset($_SESSION['user_logged_in'])){
     require_once "php_libs/login.php";
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
